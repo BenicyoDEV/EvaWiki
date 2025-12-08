@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+</head>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+header {
+    width: 100%;
+    height: 67vh; /* altura achatada */
+
+    background-size: cover; /* TRUQUE: preenche a largura sem cortar muito */
+   background-position: center;
+    background-repeat: no-repeat;
+
+     display: flex;
+    justify-content: center;  /* horizontalmente */
+    align-items: center;       /* verticalmente */
+    text-align: center;
+
+    
+
+}
+
+
+
+
+
+.imgE:hover {
+    transform: rotate(7deg);
+}
+
+.imgD:hover {
+    transform: rotate(-7deg);
+}
+
+.txt {
+    order: 1;
+    flex: 1;
+    width: 74%;
+
+
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+
+    opacity: 0%;
+
+    transition: opacity 0.5s;
+    
+     text-shadow: 2px 2px 8px black;
+}
+
+.imgD:hover + .txt {
+    opacity: 100%;
+}
+.imgE:hover + .txt {
+    opacity: 100%;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Michroma", sans-serif;
+    filter: drop-shadow(8px 5px 10px rgb(0, 0, 0));
+}
+
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+background-image: 
+    linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.97) 0%,      /* quase preto total */
+        rgba(70, 0, 0, 0.55) 40%,    /* vermelho original, bem abafado */
+        rgba(95, 0, 0, 0.40) 70%,    /* mesma cor, só mais soterrada no preto */
+        rgba(0, 0, 0, 0.98) 100%     /* preto absoluto */
+    ),
+    url("img/wallpaper3.jpg");
+
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+    
+.centroheader {
+    font-size: 13vh;
+    font-family: "Michroma", sans-serif;
+    color: white;
+
+     font-size: clamp(1.9vh, 4vw, 48px);
+
+     animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.bloco {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 2%;
+    width: auto;
+    padding-top: 10vh;
+}
+
+.imgE, .imgD {
+    width: 25%;
+    height: auto;
+    
+
+    transform: rotate(0deg);
+    transition: all 1s ease;
+    
+    filter: drop-shadow(8px 5px 10px rgb(0, 0, 0));
+}
+
+.imgD {
+    order: 2;
+}
+
+.grande {
+    width: 47%;
+    height: auto;
+    margin: 0;
+    float: left;             /* cola na parede */
+}
+
+/* TELAS PEQUENAS — 750px OU MENOS */
+
+@media (max-width: 750px) {
+
+    .bloco {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+
+    /* FORÇA TODAS AS IMAGENS A FICAREM EM CIMA */
+    .imgE,
+    .imgD,
+    .grande {
+        order: 0 !important;
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+    }
+
+
+
+
+
+    .txt {
+        order: 1 !important;
+        width: 90%;
+        text-align: center;
+    }
+
+.centroheader {
+    font-size: 8.1vh;
+    font-family: "Michroma", sans-serif;
+    color: white;
+
+     animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+
+p {
+    font-size: 15px;
+}
+
+.bloco {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 4px;
+}
+
+
+
+.imgE:hover {
+    transform: rotate(-5deg);
+}
+
+.imgD:hover {
+    transform: rotate(5deg);
+}
+}
+
+
+
+/* TELAS PEQUENAS — 1000px OU MENOS */
+@media (max-width: 1000px) {
+ 
+.centroheader {
+    font-size: 5.8vh;
+    font-family: "Michroma", sans-serif;
+    color: white;
+
+     animation: myAnim 2s ease 0s 1 normal forwards;
+}
+}
+
+
+</style>
+<body>
+    <header>
+    <h1 class="centroheader">Resumo das principais obras</h1>
+</header>
+
+    <div id="container">
+        <div class="bloco">
+            <img class="imgE grande" src="img/endo.jpg">
+            <div class="txt">
+                <p>
+                The End of Evangelion apresenta o colapso da NERV e da própria humanidade enquanto o “Projeto de Instrumentalização” é iniciado. 
+                Shinji, em profunda crise emocional, torna-se a peça central da decisão sobre o futuro humano. 
+                Asuka trava uma batalha final brutal contra as unidades inimigas. 
+                A narrativa explora temas de identidade, isolamento e a busca por sentido. 
+                No desfecho, Shinji opta por permitir que a individualidade humana exista, mesmo com o sofrimento que ela implica.
+                </p>
+            </div>
+        </div>
+        <div class="bloco">
+            <img class="imgD grande" src="img/eva1.jpg">
+            <div class="txt">
+                <p>
+                Evangelion 1.11 reconta o início da história de Shinji Ikari, convocado por seu pai para pilotar a Unidade-01 e enfrentar os “Anjos” que ameaçam a humanidade. 
+                A NERV coordena a defesa da cidade enquanto Shinji, inseguro e despreparado, é colocado diante de responsabilidades imensas. 
+                O filme apresenta Rei Ayanami e estabelece a relação tensa entre Shinji e Gendo. 
+                A narrativa combina ação e introspecção, destacando o peso emocional imposto ao protagonista. 
+                </p>
+            </div>
+        </div>
+        <div class="bloco">
+            <img class="imgE grande" src="img/evangelion222.webp">
+            <div class="txt">
+                <p>
+                    Evangelion 2.22 aprofunda o desenvolvimento de Shinji, Asuka e Rei enquanto novos Anjos atacam.
+                    O filme introduz Mari e Kaworu, pilotos adicionais, e mostra avanços no relacionamento entre os personagens.
+                    A NERV enfrenta batalhas cada vez mais destrutivas, culminando no ataque do Décimo Anjo, que obriga Shinji a romper limites na tentativa de salvar Rei.
+                </p>
+            </div>
+        </div>
+        <div class="bloco">
+            <img class="imgD grande" src="img/eva333.jpg">
+            <div class="txt">
+                <p>
+                    Evangelion 3.33 mostra Shinji acordando em um mundo devastado após o impacto anterior. 
+                    Desorientado, ele é afastado pela antiga equipe e atraído por Kaworu, que tenta guiá-lo para corrigir o passado. 
+                    A tensão entre as diferentes facções revela que a destruição do mundo está ligada diretamente às ações de Shinji. 
+                </p>
+            </div>
+         </div>
+        <div class="bloco">
+            <img class="imgE grande" src="img/evangelion3010.jpeg">
+            <div class="txt">
+                <p>
+                    Evangelion 3.0+1.0 acompanha a etapa final do embate entre NERV e WILLE. 
+                    Shinji passa por um processo de reconstrução emocional enquanto o mundo se aproxima do colapso definitivo. 
+                    Os personagens enfrentam camadas de revelações sobre o Projeto de Instrumentalização e as intenções de Gendo.
+                </p>
+            </div>
+        </div>
+        <div class="bloco">
+            <img class="imgD grande" src="img/deathrebirthfilme.jpg">
+            <div class="txt">
+                <p>
+                    Death and Rebirth é dividido em duas partes. 
+                    “Death” oferece um resumo reestruturado dos principais eventos da série, destacando conflitos emocionais e evolução dos personagens. 
+                    “Rebirth” apresenta os primeiros acontecimentos que antecedem The End of Evangelion, incluindo o início do ataque à NERV e o avanço do Projeto de Instrumentalização. 
+                    O filme funciona como ponte entre o anime e o desfecho cinematográfico.
+                </p>
+            </div>
+        </div>
+        <div class="bloco">
+            <img class="imgE grande" src="img/evangelionanime.webp">
+            <div class="txt">
+                <p>
+                   O Anime Neon Genesis Evangelion acompanha Shinji Ikari, convocado para pilotar o Evangelion Unidade-01 contra os Anjos que atacam a humanidade. 
+                   Ao lado de Rei e Asuka, ele lida com batalhas intensas e conflitos psicológicos profundos. 
+                   A trama explora temas como identidade, trauma, relações interpessoais e o medo da rejeição. 
+                </p>
+            </div>
+        </div>
+         <div class="bloco">
+            <img class="imgD grande" src="img/mangaeva.avif">
+            <div class="txt">
+                <p>
+                 O mangá apresenta uma versão alternativa da história, com foco maior na perspectiva interna de Shinji. 
+                 Embora siga a mesma premissa básica, desenvolve de forma distinta certas relações e personalidades, especialmente de Rei, Kaworu e Asuka. 
+                 A narrativa aprofunda o conflito emocional do protagonista e reinterpreta momentos chave com variações significativas. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

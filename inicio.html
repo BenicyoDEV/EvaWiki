@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <title>EvaWiki</title>
+
+<style>
+
+
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+
+body {
+    background: 
+        linear-gradient(rgba(219, 0, 0, 0.32), rgba(0, 0, 0, 0.78)),
+        url("img/eva01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 3%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+}
+
+
+.logo {
+    filter: drop-shadow(12px 5px 51px #000);
+}
+
+.logo img {
+    width: 40vw;
+    max-width: 400px;
+    height: auto;
+}
+
+
+.textoinicio {
+    color: white;
+    font-size: 19px;
+    text-align: center;
+
+    max-width: 45%;
+    min-width: 260px;
+
+    filter: drop-shadow(12px 5px 51px #000);
+}
+
+
+.michroma-regular {
+    font-family: "Michroma", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/*TELAS MENORES QUE 900px */
+.container {
+  display: flex;
+  flex-direction: column;   /* imagem em cima, texto embaixo */
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  padding: 30px 0;
+}
+
+.textoinicio {
+  max-width: 90%;
+  padding: 20px 0;
+}
+
+
+
+/* TELAS GRANDES — 900px OU MAIS */
+@media (min-width: 900px) {
+
+  body {
+    display: flex;
+    justify-content: center;  /* centro horizontal */
+    align-items: center;       /* centro vertical */
+    height: 100vh;             /* ocupa a tela inteira */
+    padding: 0;
+  }
+
+  .container {
+    flex-direction: row;       /* lado a lado */
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
+  .textoinicio {
+    max-width: 40%;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <img src="img/EVANGELION CHROME sem fundo.png" alt="LogoDoSite">
+    </div>
+
+    <p class="textoinicio michroma-regular">
+        Seja bem-vindo ao EvaWiki. Aqui você encontra informações sobre Neon Genesis Evangelion, 
+        como personagens, enredo, mídias e outros conteúdos do anime, tudo organizado de forma 
+        simples e no estilo da obra. Aproveite e explore o mundo de Neon Genesis Evangelion.
+    </p>
+
+</div>
+
+</body>
+</html>

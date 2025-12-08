@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+   background-image: 
+    linear-gradient(
+        180deg,
+        rgba(10, 0, 20, 0.75) 0%,    /* preto com roxo MUITO escuro */
+        rgba(20, 0, 40, 0.65) 50%,   /* roxo profundo e quase preto */
+        rgba(10, 0, 25, 0.80) 100%   /* fecha ainda mais escuro */
+    ),
+    url("img/fundoeva3.jpg");
+
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* mantém o efeito bonito */
+}
+
+
+
+
+
+
+header {
+    width: 100%;
+    height: 50vh; /* altura achatada */
+    
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(110, 0, 0, 0.4)),
+        url("img/evangelionsimagemum.png");
+
+    background-size: cover; /* TRUQUE: preenche a largura sem cortar muito */
+   background-position: center;
+    background-repeat: no-repeat;
+
+     display: flex;
+    justify-content: center;   /* horizontalmente */
+    align-items: center;       /* verticalmente */
+    text-align: center;
+}
+
+
+.bloco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 2%;
+    width: auto;
+}
+
+.blocoesq {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 2%;
+    width: auto;
+}
+
+.imgE, .imgD {
+    width: 10%;
+    height: 10%;
+    
+
+    transform: rotate(0deg);
+    transition: all 1s ease;
+    
+    filter: drop-shadow(5px 2px 7px rgb(0, 0, 0));
+}
+
+
+.imgD {
+    order: 2;
+}
+
+.flipar {
+   transform: scaleX(-1);
+}
+
+.grande0 {
+    width: 45%;
+    height: auto;
+    margin: 0;
+    float: left;             /* cola na parede */
+}
+
+.grande {
+    width: 35%;
+    height: auto;
+    margin: 0;
+    float: left;             /* cola na parede */
+}
+
+.grande1 {
+     width: 25%;
+    height: auto;
+    margin: 0;
+    float: left;             /* cola na parede */
+}
+
+   .michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.centroheader {
+    font-size: 13vh;
+    font-family: "Michroma", sans-serif;
+    color: white;
+
+     font-size: clamp(1.9vh, 4vw, 48px);
+
+     animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-size: 2.4vh;
+    color: white;
+     font-family: "Michroma", sans-serif;
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* TELAS PEQUENAS — 1000px OU MENOS */
+@media (max-width: 1000px) {
+ 
+.centroheader {
+    font-size: 5.8vh;
+    font-family: "Michroma", sans-serif;
+    color: white;
+
+     animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+}
+
+
+</style>
+
+<body>
+    <header>
+
+        <h1 class="centroheader">Evangelions</h1>
+    </header>
+
+
+    <div id="container">
+
+    <div class="bloco">
+        <img class="imgE flipar grande" src="img/eva0_1pose.png">
+        <div class="txt">
+            <h1><p>EVA-00 (Primeira Armadura)</p></h1>
+            <p>
+O primeiro protótipo funcional criado pela NERV. <br>
+É instável e depende fortemente do piloto para operar. <br>
+Sua armadura amarela serve para conter falhas estruturais. <br>
+Apesar de fraco em combate direto, teve papel crucial em testes. <br>
+Sua sincronia inicial era baixa, mas aumentou com o tempo. <br>
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgD grande1" src="img/eva0_2pose.png">
+        <div class="txt">
+            <h1><p>EVA-00 (Nova Armadura)</p></h1>
+            <p>
+Após o acidente, o EVA-00 recebeu uma nova armadura azul. <br>
+Essa versão é mais estável e resistente a interferências. <br>
+Tem foco em defesa e suporte durante batalhas contra Anjos. <br>
+Seus sistemas internos foram refinados para melhor sincronia. <br>
+É o modelo mais confiável em confrontos de médio alcance. <br>
+</p>
+        </div>
+    </div>
+
+    <div class="blocoesq">
+        <img class="imgE grande" src="img/eva01_pose.png">
+        <div class="txt">
+            <h1><p>EVA-01</p></h1>
+            <p>
+O EVA-01 é o mais imprevisível entre todas as unidades. <br>
+Possui desempenho anormalmente alto em combate real. <br>
+Sua origem ligada a Lilith o torna único e instável. <br>
+É o EVA com a maior taxa de sincronia já registrada. <br>
+Age por conta própria em momentos críticos. <br>
+
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgD grande1" src="img/eva2pose.png">
+        <div class="txt">
+            <h1><p>EVA-02</p></h1>
+            <p>
+O EVA-02 foi criado exclusivamente para combate. <br>
+É ágil, ofensivo e extremamente responsivo ao piloto. <br>
+Sua pilotagem exige precisão e reflexos avançados. <br>
+Tem versatilidade e grande variedade de armamentos. <br>
+Foi o primeiro modelo realmente otimizado para guerra. <br>
+
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgE flipar grande" src="img/eva3pose.png">
+        <div class="txt">
+            <h1><p>EVA-03</p></h1>
+            <p>
+Um dos quatro EVAs enviados aos EUA. <br>
+Foi corrompido por um Anjo durante testes de ativação. <br>
+Após a contaminação, tornou-se totalmente incontrolável. <br>
+Seu design equilibrava força e mobilidade. <br>
+O incidente levou à destruição total da unidade. <br>
+
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgD grande" src="img/eva4pose.png">
+        <div class="txt">
+            <h1><p>EVA-04</p></h1>
+            <p>
+Desapareceu após um experimento com o Sistema S². <br>
+Nunca entrou em combate por causa do acidente. <br>
+Era a unidade mais enigmática do projeto americano. <br>
+Sua perda causou crise diplomática e científica. <br>
+É lembrado como o maior fracasso técnico da série. <br>
+
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgE flipar grande0" src="img/evapmpose.png">
+        <div class="txt">
+            <h1><p>Unidades de Produção em Massa</p></h1>
+            <p>
+Criados pela SEELE para substituir as unidades principais. <br>
+Possuem S² e não precisam de piloto humano. <br>
+São leves, silenciosos e extremamente eficientes. <br>
+Operam em grupo e em cenários de larga escala. <br>
+Sua aparência artificial causa estranhamento e medo. <br>
+
+</p>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+</body>
+</html>

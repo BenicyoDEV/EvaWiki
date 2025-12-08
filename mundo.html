@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <title>Mundo - EvaWiki</title>
+
+<style>
+
+    body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+        body {
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(110, 0, 0, 0.4)),
+             url("img/fundomundo3.jpg");
+
+           background-size: cover;
+      background-position: center;
+    background-attachment: fixed;
+      font-family: "Michroma", sans-serif;
+          color: white;
+}
+
+
+        header {
+    width: 100%;
+       height: 45vh;
+
+    background-image:
+              linear-gradient(rgba(0, 0, 0, 0.5), rgba(110, 0, 0, 0.7)),
+        url("img/fundomundo4.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centroheader {
+         font-size: clamp(2rem, 4vw, 3.5rem);
+       animation: fadeIn 1.5s ease;
+}
+
+        @keyframes fadeIn {
+         from { opacity: 0; transform: translateY(80px); }
+            to { opacity: 1; transform: translateY(0); }
+    }
+
+
+        #container {
+    width: 90%;
+        max-width: 1000px;
+        margin: auto;
+    margin-top: 30px;
+}
+
+    .bloco {
+    margin: 40px 0;
+}
+
+        .bloco img {
+       width: 40%;
+        max-width: 380px;
+       margin: 10px auto;
+        display: block;
+    filter: drop-shadow(5px 2px 7px rgb(0, 0, 0));
+}
+
+
+.listamundo {
+    list-style-type: square;
+    padding-left: 22px;
+    margin-top: 12px;
+    font-size: clamp(14px, 2.2vh, 18px);
+    line-height: 1.6;
+    text-shadow: 0 0 5px black;
+}
+
+.listamundo li {
+    margin-bottom: 6px;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 6px 10px;
+    border-left: 3px solid #bb0000;
+    border-radius: 4px;
+}
+
+
+
+p {
+    font-size: clamp(14px, 2.2vh, 18px);
+         text-shadow: 0 0 5px black;
+         line-height: 1.6;
+}
+
+        table {
+         width: 100%;
+    border-collapse: collapse;
+            margin-top: 20px;
+            background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+        overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #600000;
+}
+
+th {
+    background: rgba(255, 50, 50, 0.9);
+}
+
+td {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+
+    .tituloTabela {
+         margin-bottom: 10px;
+            text-align: center;
+            font-size: clamp(18px, 2.4vh, 24px);
+}
+
+    @media (max-width: 700px) {
+    .bloco img {
+        width: 80%;
+    }
+}
+
+/* telas menores de 600px */
+@media (max-width: 600px) {
+    
+    table, th, td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    th {
+        font-size: 13px;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        margin: 10px 0;
+    }
+
+    .tituloTabela {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1 class="centroheader">Mundo</h1>
+</header>
+
+<div id="container">
+
+    <div class="bloco">
+        <img src="img/globoevangelion.jpg">
+        <p>
+        Após o Segundo Impacto, a Terra tornou-se um planeta irreconhecível. 
+        O eixo da Terra foi levemente alterado, elevando o nível dos mares em centenas de metros e 
+        submergindo grande parte das zonas costeiras.
+        <br><br>
+        Os oceanos tornaram-se vermelhos devido à mudança química causada pela presença de LCL — 
+        essencialmente o “sangue” da própria humanidade. A flora e fauna marinha foram quase extintas,
+        sobrevivendo apenas organismos adaptados à nova composição.
+        <br><br>
+        A sociedade remanescente se reorganizou em megacidades fortificadas, controladas pela ONU e pela NERV.
+        Fora delas, o mundo é hostil: áreas radioativas, regiões desertas e ecossistemas colapsados.
+        A humanidade, reduzida e militarizada, vive à sombra constante da ameaça angelical.
+        </p>
+    </div>
+
+    <div class="bloco">
+        <h2 class="tituloTabela">População Mundial</h2>
+        <table>
+            <tr><th>Período</th><th>População Estimada</th><th>Variação</th></tr>
+            <tr><td>Antes do 2º Impacto (2000)</td><td>6 a 6,1 bilhões</td><td>—</td></tr>
+            <tr><td>Após o 2º Impacto (~2004)</td><td>3,2 bilhões</td><td>-47% da humanidade</td></tr>
+            <tr><td>Após o Quase-3º Impacto</td><td>Dezenas de milhares</td><td>-99% restantes</td></tr>
+        </table>
+    </div>
+
+    <div class="bloco">
+        <h2 class="tituloTabela">Principais Fatores de Devastação</h2>
+        <table>
+            <tr><th>Motivos</th><th>Consequências</th></tr>
+            <tr>
+                <td>Erupções vulcânicas e tsunamis</td>
+                <td>Destruição de territórios costeiros inteiros</td>
+            </tr>
+            <tr>
+                <td>Colapso climático global</td>
+                <td>Mudança de biomas, desertificação e novas tempestades polares</td>
+            </tr>
+            <tr>
+                <td>Guerras regionais e militarização</td>
+                <td>Queda de governos e extinção de nações menores</td>
+            </tr>
+            <tr>
+                <td>Contaminação dos oceanos por LCL</td>
+                <td>Morte de ecossistemas marinhos e escassez alimentar</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="bloco">
+        <h2 class="tituloTabela">Estado da Humanidade Pós-Impacto</h2>
+        <table>
+            <tr><th>Regiões Ativas</th><th>População</th><th>Situação</th></tr>
+            <tr>
+                <td>Neo Tokyo-3 e instalações da NERV</td>
+                <td>Poucos milhares</td>
+                <td>Área militarizada e alvo direto dos Anjos</td>
+            </tr>
+            <tr>
+                <td>Assentamentos isolados (como Vila-3)</td>
+                <td>Pequenos grupos</td>
+                <td>Sobrevivência básica, sem tecnologia</td>
+            </tr>
+            <tr>
+                <td>Resto do mundo</td>
+                <td>Quase inexistente</td>
+                <td>Territórios abandonados e inóspitos</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="bloco">
+        <h2 class="tituloTabela">Condições do Planeta</h2>
+        <table>
+            <tr><th>Infraestrutura</th><th>Ecossistema</th><th>Clima</th></tr>
+            <tr>
+                <td>
+                    80% das antigas cidades costeiras submersas<br>
+                    Centenas de instalações militares abandonadas
+                </td>
+                <td>
+                    95% das espécies marinhas extintas<br>
+                    Superfície com vida reduzida a bolsões isolados
+                </td>
+                <td>
+                    Instabilidade sísmica extrema<br>
+                    Mudança permanente do eixo terrestre
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="bloco">
+    <h2 class="tituloTabela">Características do Planeta</h2>
+    <ul class="listamundo">
+        <li>Mares vermelhos devido ao LCL presente na água.</li>
+        <li>Mudanças no eixo da Terra alteraram drasticamente o clima.</li>
+        <li>Bolsões raros de flora e fauna sobrevivente.</li>
+        <li>Radiação e zonas devastadas pelo impacto inicial.</li>
+        <li>Megacidades fortificadas como único refúgio seguro.</li>
+    </ul>
+</div>
+
+<div class="bloco">
+    <h2 class="tituloTabela">Principais Zonas Hostis</h2>
+    <ul class="listamundo">
+        <li>Regiões costeiras submersas</li>
+        <li>Áreas contaminadas por resíduos angelicais</li>
+        <li>Desertos sísmicos e falhas tectônicas expostas</li>
+        <li>Complexos abandonados da ONU e NERV</li>
+    </ul>
+</div>
+
+
+</div>
+
+
+</body>
+</html>

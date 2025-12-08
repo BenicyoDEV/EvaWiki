@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <title>Personagens</title>
+</head>
+<style>
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+background:
+    linear-gradient(
+        rgba(140, 0, 0, 0.28),  /* vermelho escuro mais sutil */
+        rgba(0, 0, 0, 0.88)    /* preto mais dominante */
+    ),
+    url("img/fundocidade.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* mantém o efeito bonito */
+}
+
+
+
+header {
+    width: 100%;
+    height: 50vh; /* altura achatada */
+    
+   background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(110, 0, 0, 0.55)),
+        url("img/fundopersonagens.webp");
+
+    background-size: cover; /* TRUQUE: preenche a largura sem cortar muito */
+   background-position: center;
+    background-repeat: no-repeat;
+
+     display: flex;
+    justify-content: center;   /* horizontalmente */
+    align-items: center;       /* verticalmente */
+    text-align: center;
+}
+
+
+
+.bloco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 2%;
+    width: auto;
+}
+
+.blocoesq {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 2%;
+    width: auto;
+}
+
+.imgE, .imgD {
+    width: 10%;
+    height: 10%;
+    
+
+    transform: rotate(0deg);
+    transition: all 1s ease;
+    
+    filter: drop-shadow(5px 2px 7px rgb(0, 0, 0));
+}
+
+
+.imgD {
+    order: 2;
+}
+
+.flipar {
+   transform: scaleX(-1);
+}
+
+.grande0 {
+    width: 45%;
+    height: auto;
+    margin: 0;
+    float: left;             /* cola na parede */
+}
+
+.grande {
+    width: 35%;
+    height: auto;
+    margin: 0;
+    float: left;             /* cola na parede */
+}
+
+.grande1 {
+     width: 25%;
+    height: auto;
+    margin: 0;
+    float: left;             /* cola na parede */
+}
+
+   .michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.centroheader {
+    font-size: 13vh;
+    font-family: "Michroma", sans-serif;
+    color: white;
+
+     font-size: clamp(1.9vh, 4vw, 48px);
+
+     animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-size: 1.9vh;
+    color: white;
+     font-family: "Michroma", sans-serif;
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* TELAS PEQUENAS — 1000px OU MENOS */
+@media (max-width: 1000px) {
+ 
+.centroheader {
+    font-size: 6.5vh;
+    font-family: "Michroma", sans-serif;
+    color: white;
+
+     animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+}
+
+</style>
+
+<body>
+    <header>
+
+        <h1 class="centroheader">Personagens</h1>
+    </header>
+
+
+    <div id="container">
+        <div class="bloco">
+            <img class="imgE grande0" src="img/cara1.png">
+            <div class="txt">
+                <p>
+                Shinji Ikari, piloto do Evangelion Unidade 01 e o Terceiro Children, é o protagonista emocional da trama.
+Sua jornada gira em torno da busca pela aceitação, do medo do abandono e da tentativa de compreender seu próprio valor em um mundo onde todos esperam algo dele.
+Sua relação quebrada com Gendo, a culpa pela morte da mãe e sua incapacidade de lidar com sentimentos intensos moldam a evolução do personagem.
+                </p>
+            </div>
+        </div>
+        <div class="bloco">
+            <img class="imgD grande" src="img/cara2.png">
+            <div class="txt">
+                <p>
+             Asuka, piloto da Unidade 02 e Segunda Children, encarna orgulho, competitividade e a luta feroz por reconhecimento.
+Sob sua confiança extrema, existe uma dor profunda causada por traumas familiares, isolamento emocional e pressão para ser perfeita.
+Ela e Shinji refletem polos opostos do mesmo conflito humano: o desejo de ser amado e o medo de ser vulnerável.
+Seu colapso psicológico e posterior ressurgimento demonstram o tema central de Evangelion: sobreviver à própria existência.
+                </p>
+            </div>
+        </div>
+        <div class="bloco">
+            <img class="imgE grande" src="img/cara3.png">
+            <div class="txt">
+                <p>
+               Rei Ayanami, piloto da Unidade 00 e Primeira Children, é uma peça-chave do Projeto de Instrumentalidade Humana.
+Ela possui uma natureza misteriosa, com quase nenhuma memória de seu passado, e vive presa entre a obediência cega e o despertar de sua própria individualidade.
+Sua existência como clone de Yui Ikari, carregando fragmentos de Lilith, é central para o plano da NERV e da SEELE.
+A evolução de Rei representa a luta por identidade: ser apenas uma ferramenta ou um ser digno de escolha e sentimentos.
+                
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bloco">
+            <img class="imgD grande" src="img/cara4.png">
+            <div class="txt">
+                <p>
+               Gendo Ikari, comandante da NERV e autor das manipulações que levaram ao Terceiro Impacto, é movido pelo desejo egoísta de reencontrar Yui — custe o que custar.
+Calculista, frio e disposto a sacrificar qualquer um, inclusive seu próprio filho, ele acredita que controlar a evolução humana é justificável.
+No entanto, sua máscara de poder esconde medo e dor: ele é um homem que não sabe mais amar sem destruir.
+            </div>
+        </div>
+        <div class="bloco">
+            <img class="imgE grande" src="img/cara5.png">
+            <div class="txt">
+                <p>
+               Misato, major da NERV e responsável pelos pilotos, conecta o mundo adolescente com o horror dos segredos militares.
+Marcada pelo trauma do Segundo Impacto, ela usa humor e impulsividade para esconder as cicatrizes emocionais.
+É guiada por um forte senso de justiça e pela vontade de impedir que a história se repita, mesmo que para isso precise confrontar Gendo e pagar um alto preço pessoal.
+                </p>
+            </div>
+        </div>
+        <div class="bloco">
+            <img class="imgD grande1" src="img/cara6.png">
+            <div class="txt">
+                <p>
+              Kaworu, o Quinto Children e Tabris, o 17º Anjo, surge como um ponto de virada emocional para Shinji.
+Ele demonstra empatia genuína em um mundo onde todos o julgam ou manipulam, representando uma luz suave no caos.
+Mas sua natureza angelical o coloca em conflito com a humanidade. Sua decisão final — escolher Shinji e não SEELE — determina o tom do fim de Evangelion:
+o amor e a dor caminham juntos.
+                </p>
+            </div>
+        </div>
+        <div class="bloco">
+            <img class="imgE grande1" src="img/cara7.png">
+            <div class="txt">
+                <p>
+                     Kaji, agente infiltrado e investigador da verdade, atua nos bastidores para revelar os planos da SEELE e de Gendo.
+Sua filosofia de vida livre esconde medo e coragem em igual medida.
+Ele é peça-chave ao transmitir informações vitais que poderiam impedir o sofrimento causado pela Instrumentalidade.
+Seu destino trágico simboliza o preço de buscar a verdade em um mundo governado pela mentira.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bloco">
+            <img class="imgD grande1" src="img/cara8.png">
+            <div class="txt">
+                <p>
+                    Ritsuko, cientista-chefe da NERV, guarda os maiores segredos tecnológicos da série — incluindo o sistema MAGI e o processo por trás da existência de Rei.
+Ela vive em constante conflito entre lógica e emoção, especialmente por sua relação com Gendo e pela sombra de sua mãe, Naoko Akagi.
+Seu papel é crucial para expor as verdades mais sombrias da NERV e os limites da ciência sem ética.
+           
+                </p>
+            </div>
+        </div>
+        <div class="bloco">
+            <img class="imgE grande1" src="img/cara9.png">
+            <div class="txt">
+                <p>
+                Fuyutsuki, subcomandante e braço direito de Gendo, é o guardião silencioso da história de Evangelion.
+Ele presenciou a origem de tudo: Yui, o Segundo Impacto, e a criação dos Evangelions.
+Apesar de discordar dos métodos de Gendo, permanece ao lado dele por lealdade à memória de Yui.
+Sua presença representa o peso do passado determinando o futuro.
+                </p>
+            </div>
+        </div>
+        <div class="bloco">
+            <img class="imgD grande1" src="img/cara10.png">
+            <div class="txt">
+                <p>
+             SEELE é o conselho secreto que manipula o destino da humanidade nos bastidores, controlando governos e projetando o Apocalipse.
+Eles acreditam que o sofrimento humano só pode ser eliminado unificando todas as almas em um único ser através da Instrumentalidade.
+São antagonistas ideológicos: acreditam estar salvando a humanidade… ao apagar o que nos torna humanos.
+                </p>
+            </div>
+        </div>
+
+</body>
+</html>

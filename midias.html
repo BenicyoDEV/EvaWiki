@@ -1,0 +1,274 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+<style>
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+body {
+     background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.88), /* preto forte, mas não absoluto */
+            rgba(40, 0, 15, 0.70) /* vinho escuro mais visível */
+        ),
+        url("img/Near_Third_Impact.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+    .michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+    .Container {
+        display:flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+         align-items: center;      
+
+
+    }
+
+/* TODAS AS TELAS */
+@media (max-width: 100000px) {
+  .capa {
+    width: 350px;
+    height: 475px;
+    border: 3px solid rgba(0,0,0,0.95);
+    border-radius: 6px;
+  }
+}
+
+p {
+    font-size: 1.25vh;
+    color: white;
+    font-family: "Michroma", sans-serif;
+}
+
+
+ .animacao {
+    transition: transform 0.3s ease;
+  }
+
+  .animacao:hover {
+    transform: scale(1.09);
+  }
+
+
+header {
+    width: 100%;
+    height: 50vh; /* altura achatada */
+    
+     display: flex;
+    justify-content: center;   /* horizontalmente */
+    align-items: center;       /* verticalmente */
+    text-align: center;
+}
+
+.centroheader {
+    font-size: 13vh;
+    font-family: "Michroma", sans-serif;
+    color: white;
+
+     font-size: clamp(1.9vh, 4vw, 48px);
+
+     animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+
+.Container img {
+  object-fit: cover;
+  display: block;          
+  box-sizing: border-box;  
+ backface-visibility: hidden;
+}
+
+.Container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;                                                                    
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TELAS PEQUENAS — 1000px OU MENOS */
+@media (max-width: 1000px) {
+ 
+.centroheader {
+    font-size: 5.8vh;
+    font-famil7"Michroma", sans-serif;
+    color: white;
+
+     animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+}
+
+
+
+ </style>
+
+ </head>
+ 
+ <body>
+ <header>
+        <h1 class="centroheader">Mídias Relacionadas</h1>
+    </header>
+
+
+    <div class="Container">
+
+
+
+  <div class="anime animacao">
+                <a href="https://pt.wikipedia.org/wiki/Neon_Genesis_Evangelion" target="_blank" class="Instalogo">
+                <img src="img/anime.jpg" class="capa">
+                </a> 
+                <p>Neon Genesis Evangelion</p>
+            </div>
+
+ <div class="eoe animacao">
+                <a href="https://pt.wikipedia.org/wiki/The_End_of_Evangelion" target="_blank">
+                <img src="img/eoe.png" class="capa">
+                </a>
+                <p>The End of Evangelion</p>
+            </div>
+  <div class="um animacao">
+                <a href="https://en.wikipedia.org/wiki/Evangelion:_1.0_You_Are_(Not)_Alone" target="_blank" >
+                <img src="img/10.png" class="capa">
+                </a>
+                <p>Evangelion: 1.0 Você (não) Está sozinho.</p>
+            </div>
+
+ <div class="dois animacao">
+                <a href="https://en.wikipedia.org/wiki/Evangelion:_2.0_You_Can_(Not)_Advance" target="_blank">
+                <img src="img/dois.jpg"  class="capa">
+                </a> 
+                <p>Evangelion: 2.0 Você (não) Pode Avançar.</p>
+            </div>
+
+ <div class="tres animacao">
+                <a href="https://pt.wikipedia.org/wiki/Evangelion:_3.0_You_Can_(Not)_Redo" target="_blank">
+                <img src="img/tres.webp"  class="capa">
+                </a> 
+                <p>Evangelion: 3.0 Você (não) Pode Refazer</p>
+</div>
+
+            <div class="quatro animacao">
+                <a href="https://pt.wikipedia.org/wiki/Evangelion:_3.0%2B1.0_Thrice_Upon_a_Time" target="_blank">
+                <img src="img/quatro.jpg" class="capa">
+                </a>
+                <p>Evangelion: 3.0 + 1.0 A Esperança</p>
+            </div>
+  <div class="deathrebirth animacao">
+                <a href="https://en.wikipedia.org/wiki/Neon_Genesis_Evangelion:_Death_%26_Rebirth" target="_blank">
+                <img src="img/deathrebirth.jpg"  class="capa">
+                </a>
+                <p>Neon Genesis Evangelion: Death and Rebirth</p>
+            </div> 
+
+ <div class="manga animacao">
+                <a href="https://pt.wikipedia.org/wiki/Neon_Genesis_Evangelion" target="_blank">
+                <img src="img/manga.jpg" class="capa">
+                </a>
+                <p>Neon Genesis Evangelion (Mangá)</p>
+            </div>
+             <div class="manga animacao">
+                <a href="https://pt.wikipedia.org/wiki/Neon_Genesis_Evangelion:_Angelic_Days" target="_blank">
+                <img src="img/angelic days.jpg" class="capa">
+                </a>
+                <p>Neon Genesis Evangelion: Angelic Days</p>
+            </div>
+ <div class="manga animacao">
+                <a href="https://evangelion.fandom.com/wiki/Petit_Eva_(manga)" target="_blank">
+                <img src="img/petiteva.webp" class="capa">
+                </a>
+                <p>Petit Eva</p>
+            </div>
+ <div class="manga animacao">
+                <a href="https://evangelion.fandom.com/wiki/Neon_Genesis_Evangelion:_Gakuen_Datenroku" target="_blank">
+                <img src="img/campusapocal.webp" class="capa">
+                </a>
+                <p>Neon Genesis Evangelion: Campus Apocalypse</p>
+            </div>
+ <div class="manga animacao">
+                <a href="https://evangelion.fandom.com/wiki/Tony_Takezaki’s_Neon_Genesis_Evangelion" target="_blank">
+                <img src="img/tony.jpg" class="capa">
+                </a>
+                <p>Tony Takezaki's EVANGELION</p>
+            </div>
+<div class="lnovel animacao">
+                <a href="https://evangelion.fandom.com/wiki/Neon_Genesis_Evangelion:_ANIMA" target="_blank">
+                <img src="img/anima.jpg" class="capa">
+                </a>
+                <p>EVANGELION ANIMA</p>
+            </div>
+<div class="jogo animacao">
+                <a href="https://evangelion.fandom.com/wiki/Neon_Genesis_Evangelion_(Nintendo_64)" target="_blank">
+                <img src="img/nge64.png" class="capa">
+                </a>
+                <p>Neon Genesis Evangelion 64</p>
+            </div>
+<div class="jogo animacao">
+                <a href="https://music.youtube.com/channel/UCRjVmUQ3CW1kH6vP1VGskWA" target="_blank">
+                <img src="img/borchestra.jpg" class="capa">
+                </a>
+                <p>Neon Genesis Evangelion: Battle Orchestra</p>
+
+
+
+            </div>
+</div>
+ </body>
+ </html>
+ 

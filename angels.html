@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.40),     
+        rgba(0, 0, 0, 0.40)
+    ),
+    linear-gradient(
+        180deg,
+        rgba(10, 20, 60, 0.65) 0%,   /* azul/violeta escuro original */
+        rgba(50, 10, 30, 0.55) 50%,  /* vinho escuro */
+        rgba(80, 0, 20, 0.75) 100%   /* vermelho-vinho profundo */
+    ),
+    url("img/fundocruz3.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  /* mantém efeito bonito */
+}
+
+
+
+
+
+
+
+header {
+    width: 100%;
+    height: 50vh; /* altura achatada */
+    
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(110, 0, 0, 0.4)),
+        url("img/fundoangels3.jpg");
+
+    background-size: cover; /* TRUQUE: preenche a largura sem cortar muito */
+   background-position: center;
+    background-repeat: no-repeat;
+
+     display: flex;
+    justify-content: center;   /* horizontalmente */
+    align-items: center;       /* verticalmente */
+    text-align: center;
+}
+
+
+.bloco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 2%;
+    width: auto;
+}
+
+.blocoesq {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 2%;
+    width: auto;
+}
+
+.imgE, .imgD {
+    width: 10%;
+    height: 10%;
+    
+
+    transform: rotate(0deg);
+    transition: all 1s ease;
+    
+    filter: drop-shadow(5px 2px 7px rgb(0, 0, 0));
+}
+
+
+.imgD {
+    order: 2;
+}
+
+.flipar {
+   transform: scaleX(-1);
+}
+
+.grande0 {
+    width: 45%;
+    height: auto;
+    margin: 0;
+    float: left;             /* cola na parede */
+}
+
+.grande {
+    width: 35%;
+    height: auto;
+    margin: 0;
+    float: left;             /* cola na parede */
+}
+
+.grande1 {
+     width: 25%;
+    height: auto;
+    margin: 0;
+    float: left;             /* cola na parede */
+}
+
+.grande2 {
+     width: 15%;
+    height: auto;
+    margin: 0;
+    float: left;             /* cola na parede */
+}
+
+   .michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.centroheader {
+    font-size: 13vh;
+    font-family: "Michroma", sans-serif;
+    color: white;
+
+     font-size: clamp(1.9vh, 4vw, 48px);
+
+     animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-size: 1.9vh;
+    color: white;
+     font-family: "Michroma", sans-serif;
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* TELAS PEQUENAS — 1000px OU MENOS */
+@media (max-width: 1000px) {
+ 
+.centroheader {
+    font-size: 5.8vh;
+    font-family: "Michroma", sans-serif;
+    color: white;
+
+     animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+}
+
+
+</style>
+<body>
+    <header>
+
+        <h1 class="centroheader">Angels</h1>
+    </header>
+
+
+    <div id="container">
+
+</div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgD flipar grande1" src="img/adao3.png">
+        <div class="txt">
+            <h1><p>Adam</p></h1>
+            <p>
+O Primeiro Anjo e origem de todos os demais Anjos. <br>
+Foi encontrado pela humanidade na Antártida. <br>
+Sua reativação causou o Segundo Impacto. <br>
+Representa a fonte da vida baseada em campo AT. <br>
+É o oposto de Lilith, que gerou os humanos. <br>
+Seu corpo foi reduzido a embrião após o incidente. <br>
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgE flipar grande" src="img/lilian.webp">
+        <div class="txt">
+            <h1><p>Lilin (Humanidade)</p></h1>
+            <p>
+Nome dado pelos Anjos à raça humana. <br>
+São descendentes diretos de Lilith. <br>
+Possuem alma individual e capacidade de evolução. <br>
+Têm AT Fields naturalmente fracos. <br>
+São considerados "intrusos" pelos Anjos. <br>
+O foco de todo o conflito entre NERV, SEELE e os deuses. <br>
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgD flipar grande1" src="img/sachiel.png">
+        <div class="txt">
+            <h1><p>Sachiel</p></h1>
+            <p>
+O Terceiro Anjo e o primeiro inimigo enfrentado pela NERV. <br>
+Possui grande resistência e capacidade de regeneração. <br>
+É reconhecido por sua máscara branca e cruz explosiva. <br>
+Utiliza ataques físicos e explosões de energia. <br>
+Exibe comportamento quase ritualístico durante a luta. <br>
+</p>
+        </div>
+    </div>
+
+    <div class="blocoesq">
+        <img class="imgE grande flipar" src="img/shamshel.webp">
+        <div class="txt">
+            <h1><p>Shamshel</p></h1>
+            <p>
+O Quarto Anjo, conhecido por seus tentáculos de energia. <br>
+Ataca à distância com lâminas de luz altamente destrutivas. <br>
+Possui corpo parecido com um inseto. <br>
+É mais ágil e estratégico do que Sachiel. <br>
+Foi derrotado por Shinji em seu primeiro combate real. <br>
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgD grande1" src="img/ramiel.png">
+        <div class="txt">
+            <h1><p>Ramiel</p></h1>
+            <p>
+O Quinto Anjo, de forma geométrica perfeita. <br>
+Defende-se com um AT Field poderosíssimo. <br>
+Dispara um raio perfurante capaz de atravessar camadas da NERV. <br>
+Seu núcleo é protegido no interior da estrutura cristalina. <br>
+Exige estratégia de longo alcance para ser derrotado. <br>
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgE flipar grande" src="img/gaghiel.webp">
+        <div class="txt">
+            <h1><p>Gaghiel</p></h1>
+            <p>
+O Sexto Anjo, especializado em combate aquático. <br>
+Possui grande força física e mobilidade submersa. <br>
+Atacou diretamente a frota naval da ONU. <br>
+Sua estrutura corporal é adaptada para alta pressão oceânica. <br>
+Foi derrotado com apoio conjunto dos EVAs e dos navios. <br>
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgD grande" src="img/israfel.webp">
+        <div class="txt">
+            <h1><p>Israfel</p></h1>
+            <p>
+O Sétimo Anjo, capaz de se dividir em duas entidades. <br>
+Exige combate sincronizado para ser derrotado. <br>
+Sua divisão gera dois corpos ágeis e coordenados. <br>
+Foi derrotado por Asuka e Shinji após treino conjunto. <br>
+É um dos Anjos mais táticos da série. <br>
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgE flipar grande0" src="img/sandalphon.webp">
+        <div class="txt">
+            <h1><p>Sandalphon</p></h1>
+            <p>
+O Oitavo Anjo, encontrado ainda em estado larval. <br>
+Foi estudado enquanto se desenvolvia em magma. <br>
+Metamorfoseou-se rapidamente durante a captura. <br>
+Tornou-se extremamente agressivo após emergir. <br>
+Sua biologia é uma das mais peculiares entre os Anjos. <br>
+</p>
+        </div>
+    </div>
+
+
+    <div class="bloco">
+        <img class="imgD grande" src="img/matarael.webp">
+        <div class="txt">
+            <h1><p>Matarael</p></h1>
+            <p>
+O Nono Anjo, com corpo aracnídeo e olhos múltiplos. <br>
+Seu ataque principal é um ácido extremamente corrosivo. <br>
+Atacou Tóquio-3 durante um apagão total. <br>
+Exige trabalho em equipe dos três EVAs para ser vencido. <br>
+É um dos Anjos mais visivelmente ameaçadores. <br>
+
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgE flipar grande0" src="img/sahaquiel.webp">
+        <div class="txt">
+            <h1><p>Sahaquiel</p></h1>
+            <p>
+O Décimo Anjo, capaz de se mover em órbita. <br>
+Tentou destruir a humanidade deixando-se cair como bomba. <br>
+Possui controle gravitacional de alta precisão. <br>
+Seu AT Field cobre quilômetros. <br>
+Foi interceptado pelos três EVAs em queda livre. <br>
+
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgD grande0" src="img/ireul.webp">
+        <div class="txt">
+            <h1><p>Ireul</p></h1>
+            <p>
+O Décimo Primeiro Anjo, de natureza microscópica. <br>
+Infiltra-se como um vírus tecnológico. <br>
+Invadiu os sistemas da NERV silenciosamente. <br>
+Adapta-se em velocidade absurda. <br>
+Foi derrotado por Ritsuko através de contra-hackeamento. <br>
+
+</p>
+        </div>
+    </div>
+
+     <div class="bloco">
+        <img class="imgE flipar grande0" src="img/leliel.webp">
+        <div class="txt">
+            <h1><p>Leliel</p></h1>
+            <p>
+O Décimo Segundo Anjo, com corpo extradimensional. <br>
+Sua forma real está em um espaço invertido. <br>
+A sombra no chão é sua “porta” para o interior do corpo. <br>
+Engoliu o EVA-01 durante o combate. <br>
+Foi destruído após a Unidade 01 agir por conta própria. <br>
+
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgD flipar grande1" src="img/zeruel.png">
+        <div class="txt">
+            <h1><p>Zeruel</p></h1>
+            <p>
+O Décimo Quarto Anjo e o mais poderoso em combate direto. <br>
+Possui força bruta esmagadora e lâminas de papel reforçado. <br>
+Seu AT Field é quase impenetrável. <br>
+Invadiu a NERV sozinho sem dificuldades. <br>
+Foi devorado pela Unidade 01 em modo berserk. <br>
+
+</p>
+        </div>
+    </div>
+
+
+     <div class="bloco">
+        <img class="imgE grande0" src="img/arael.webp">
+        <div class="txt">
+            <h1><p>Areel</p></h1>
+            <p>
+O Décimo Quinto Anjo, que ataca pela mente. <br>
+Sua luz penetra o campo AT e alcança o inconsciente. <br>
+Causa trauma psicológico profundo. <br>
+Permanece em órbita fora do alcance terrestre. <br>
+Foi destruído pelo disparo da lança de Longinus. <br>
+
+</p>
+        </div>
+    </div>
+
+    <div class="bloco">
+        <img class="imgD flipar grande0" src="img/armisael.png">
+        <div class="txt">
+            <h1><p>Armisael</p></h1>
+            <p>
+O Décimo Sexto Anjo, com corpo em forma de anel vivo. <br>
+Busca contato direto com a alma dos pilotos. <br>
+Pode infiltrar-se biologicamente nos EVAs. <br>
+Tentou se fundir com Rei durante o ataque. <br>
+Foi destruído em uma explosão de auto-sacrifício. <br>
+
+</p>
+        </div>
+    </div>
+
+
+     <div class="bloco">
+        <img class="imgE flipar grande1" src="img/tebris3.png">
+        <div class="txt">
+            <h1><p>Tabris (Kaworu)</p></h1>
+            <p>
+O Décimo Sétimo Anjo, manifestado em forma humana. <br>
+Possui controle total sobre campos AT. <br>
+Mostra empatia e livre-arbítrio raros entre os Anjos. <br>
+Buscou contato com Adam, acreditando ser seu destino. <br>
+Sua decisão final mudou o curso da história. <br>
+
+</p>
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
