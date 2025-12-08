@@ -1,7 +1,6 @@
 # ⚙️ EvaWiki — Enciclopédia Interativa sobre *Neon Genesis Evangelion*
 
 **📅 Data de produção:** Dezembro de 2025  
-**🏫 Instituição:** ETEC de Poá — Curso de Desenvolvimento de Sistemas  
 
 Projeto acadêmico que apresenta um site no formato de **Wiki**, explorando o universo de *Neon Genesis Evangelion*: sua história, mundo pós-impactos, personagens, mechas (Evas), Angels e mídias relacionadas.
 
@@ -36,8 +35,6 @@ O site inclui:
 | **HTML5** | Estruturação das páginas |
 | **CSS3** | Estilizações avançadas, responsividade e efeitos visuais |
 
-> ✓ Sem uso de JavaScript — foco em CSS e estrutura sem scripts adicionais
-
 ---
 
 ## 👥 Integrantes do Projeto
@@ -46,10 +43,6 @@ O site inclui:
 - **[@arthurleon44](https://github.com/arthurleon44)**
 - **[@cieldeveloper](https://github.com/cieldeveloper)**
 
----
+- ---
 
-## 📂 Como Executar
-
-1. Baixe o repositório  
-   ```sh
-   git clone <link-do-repo>
+**🏫 Instituição:** ETEC de Poá — Curso de Desenvolvimento de Sistemas  
