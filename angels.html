@@ -200,6 +200,61 @@ body {
 }
 
 
+/* TELAS PEQUENAS — 750px OU MENOS */
+
+@media (max-width: 750px) {
+
+    .bloco,
+    .blocoesq {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+
+    /* FORÇA TODAS AS IMAGENS A FICAREM EM CIMA */
+    .imgE,
+    .imgD,
+    .grande {
+        order: 0 !important;
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+    }
+
+
+
+
+
+    .txt {
+        order: 1 !important;
+        width: 90%;
+        text-align: center;
+    }
+
+.centroheader {
+    font-size: 8.1vh;
+    font-family: "Michroma", sans-serif;
+    color: white;
+
+     animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+
+p {
+    font-size: 15px;
+}
+
+.bloco {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 4px;
+}
+
+
+
 </style>
 <body>
     <header>
