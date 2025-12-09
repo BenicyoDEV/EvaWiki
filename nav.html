@@ -38,7 +38,11 @@ ul {
     padding: 10px 0;
     width: 250px;
     background-color: transparent;
-    text-align: center;
+    text-align: left;
+ width: 30vw;
+
+  
+
 }
 
 /* LINKS */
@@ -70,19 +74,25 @@ li a:hover {
 }
 */
 
-/*  Telas pequenas */
-@media (max-width: 799px) {
+
+/* Telas pequenas: ocupar mais espaço */
+@media (max-width: 800px) {
+    ul {
+        width: 70vw;
+
+    }
     li a {
-        font-size: 13.5px !important;
+        font-size: 6vw; /* escala automática */
     }
 }
 
-/* Telas grandes*/
-@media (min-width: 800px) {
+/* Telas grandes */
+@media (min-width: 801px) {
     li a {
-        font-size: 22px !important;
+        font-size: 6vw; 
     }
 }
+
 </style>
 </head>
 
