@@ -45,4 +45,4 @@ O site inclui:
 
 - ---
 
-**🏫 Instituição:** ETEC de Poá — Curso de Desenvolvimento de Sistemas, 1º Ano
+**🏫 Instituição:** ETEC de Poá — Curso de Desenvolvimento de Sistemas, 1º ano
